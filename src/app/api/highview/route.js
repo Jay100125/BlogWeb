@@ -1,6 +1,6 @@
 // pages/api/highview.js
 
-import prisma from "@/utils/connect";
+import prisma from "./../../../utils/connect";
 import { NextResponse } from "next/server";
 
 // GET HIGHEST VIEWED POST
