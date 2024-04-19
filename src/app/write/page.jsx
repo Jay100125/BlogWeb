@@ -14,12 +14,10 @@ import {
 } from "firebase/storage";
 import { app } from "./../../utils/firebase";
 
-import ReactQuill from "react-quill";
-
 const WritePage = () => {
   const { status } = useSession();
   const router = useRouter();
-
+const ReactQuill = dynamic(()=> import('react-quill'),{ssr:false});
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState(null);
   const [media, setMedia] = useState("");
